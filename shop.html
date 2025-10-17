@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>風格商品 - Horizon Outdoor</title>
+    <meta name="description" content="Horizon Outdoor 風格商品，環保材質的戶外裝備，讓購物成為價值認同的行為">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 導覽列 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><h2>Horizon Outdoor</h2></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">首頁</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#story" class="nav-link">品牌故事</a>
+                </li>
+                <li class="nav-item">
+                    <a href="journal.html" class="nav-link">品牌誌</a>
+                </li>
+                <li class="nav-item">
+                    <a href="community.html" class="nav-link">社群牆</a>
+                </li>
+                <li class="nav-item">
+                    <a href="shop.html" class="nav-link active">風格商品</a>
+                </li>
+                <li class="nav-item">
+                    <a href="commitment.html" class="nav-link">我們的承諾</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 頁面標題 -->
+    <section class="page-header">
+        <div class="container">
+            <h1>風格商品</h1>
+            <p>讓購物成為價值認同的行為</p>
+        </div>
+    </section>
+
+    <!-- 商品分類 -->
+    <section class="shop-filters">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-category="all">全部商品</button>
+                <button class="filter-btn" data-category="clothing">上衣</button>
+                <button class="filter-btn" data-category="pants">褲子</button>
+                <button class="filter-btn" data-category="accessories">配件</button>
+                <button class="filter-btn" data-category="eco">環保系列</button>
+            </div>
+            <div class="filter-options">
+                <div class="sort-options">
+                    <select id="sort-select">
+                        <option value="default">預設排序</option>
+                        <option value="price-low">價格：低到高</option>
+                        <option value="price-high">價格：高到低</option>
+                        <option value="newest">最新上架</option>
+                        <option value="popular">最受歡迎</option>
+                    </select>
+                </div>
+                <div class="search-box">
+                    <input type="text" id="product-search" placeholder="搜尋商品...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 商品列表 -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="products-grid">
+                <!-- 商品卡片 1 -->
+                <div class="product-card" data-category="clothing eco" data-price="2880" data-popular="true">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=400&fit=crop" alt="城市漫遊防潑水外套">
+                        <div class="product-badge">環保材質</div>
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>城市漫遊防潑水外套</h3>
+                        <p class="product-description">陪你探索每個角落</p>
+                        <div class="product-features">
+                            <span class="feature-tag">100% 回收材質</span>
+                            <span class="feature-tag">防潑水</span>
+                        </div>
+                        <div class="product-price">NT$ 2,880</div>
+                        <div class="product-eco-info">
+                            <i class="fas fa-leaf"></i>
+                            <span>本產品採用 85% 環保再生纖維，是你實踐 Do the right thing 的一部分</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">加入購物車</a>
+                    </div>
+                </div>
+
+                <!-- 商品卡片 2 -->
+                <div class="product-card" data-category="clothing eco" data-price="1280" data-new="true">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=400&fit=crop" alt="環保材質T恤">
+                        <div class="product-badge new">新品</div>
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>環保材質T恤</h3>
+                        <p class="product-description">100% 有機棉，舒適環保</p>
+                        <div class="product-features">
+                            <span class="feature-tag">有機棉</span>
+                            <span class="feature-tag">透氣</span>
+                        </div>
+                        <div class="product-price">NT$ 1,280</div>
+                        <div class="product-eco-info">
+                            <i class="fas fa-leaf"></i>
+                            <span>採用 GOTS 認證有機棉，對環境友善的選擇</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">加入購物車</a>
+                    </div>
+                </div>
+
+                <!-- 商品卡片 3 -->
+                <div class="product-card" data-category="accessories" data-price="3200" data-popular="true">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=400&fit=crop" alt="多功能背包">
+                        <div class="product-badge">熱銷</div>
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>多功能背包</h3>
+                        <p class="product-description">城市與戶外的完美結合</p>
+                        <div class="product-features">
+                            <span class="feature-tag">多隔層</span>
+                            <span class="feature-tag">防水</span>
+                        </div>
+                        <div class="product-price">NT$ 3,200</div>
+                        <div class="product-eco-info">
+                            <i class="fas fa-leaf"></i>
+                            <span>使用回收塑料瓶製成的環保材質</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">加入購物車</a>
+                    </div>
+                </div>
+
+                <!-- 商品卡片 4 -->
+                <div class="product-card" data-category="pants" data-price="4500" data-new="true">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&h=400&fit=crop" alt="健行褲">
+                        <div class="product-badge new">新品</div>
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>健行褲</h3>
+                        <p class="product-description">舒適支撐，每一步都踏實</p>
+                        <div class="product-features">
+                            <span class="feature-tag">彈性材質</span>
+                            <span class="feature-tag">快乾</span>
+                        </div>
+                        <div class="product-price">NT$ 4,500</div>
+                        <div class="product-eco-info">
+                            <i class="fas fa-leaf"></i>
+                            <span>採用再生聚酯纖維，減少環境負擔</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">加入購物車</a>
+                    </div>
+                </div>
+
+                <!-- 商品卡片 5 -->
+                <div class="product-card" data-category="accessories eco" data-price="1800" data-popular="true">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=400&fit=crop" alt="環保水壺">
+                        <div class="product-badge">環保材質</div>
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>環保水壺</h3>
+                        <p class="product-description">不鏽鋼材質，健康環保</p>
+                        <div class="product-features">
+                            <span class="feature-tag">不鏽鋼</span>
+                            <span class="feature-tag">保溫</span>
+                        </div>
+                        <div class="product-price">NT$ 1,800</div>
+                        <div class="product-eco-info">
+                            <i class="fas fa-leaf"></i>
+                            <span>304 不鏽鋼材質，可重複使用，減少一次性容器</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">加入購物車</a>
+                    </div>
+                </div>
+
+                <!-- 商品卡片 6 -->
+                <div class="product-card" data-category="clothing" data-price="2200" data-new="true">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=400&fit=crop" alt="戶外襯衫">
+                        <div class="product-badge new">新品</div>
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>戶外襯衫</h3>
+                        <p class="product-description">商務與戶外的完美平衡</p>
+                        <div class="product-features">
+                            <span class="feature-tag">商務休閒</span>
+                            <span class="feature-tag">透氣</span>
+                        </div>
+                        <div class="product-price">NT$ 2,200</div>
+                        <div class="product-eco-info">
+                            <i class="fas fa-leaf"></i>
+                            <span>查看我們的《新手健行指南》了解更多戶外知識</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">加入購物車</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 載入更多 -->
+            <div class="load-more-section">
+                <button class="btn btn-outline" id="load-more-products">載入更多商品</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 購物車側邊欄 -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>購物車</h3>
+            <button class="close-cart" id="close-cart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- 購物車商品將透過 JavaScript 動態添加 -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>總計：</span>
+                <span id="cart-total">NT$ 0</span>
+            </div>
+            <button class="btn btn-primary cart-checkout">結帳</button>
+        </div>
+    </div>
+
+    <!-- 購物車遮罩 -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Horizon Outdoor</h3>
+                    <p>Go. Back to Nature.<br>Do the right thing.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速連結</h4>
+                    <ul>
+                        <li><a href="index.html#story">品牌故事</a></li>
+                        <li><a href="journal.html">品牌誌</a></li>
+                        <li><a href="community.html">社群牆</a></li>
+                        <li><a href="shop.html">商品</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>聯絡我們</h4>
+                    <p>Email: info@horizonoutdoor.com</p>
+                    <p>電話: 02-1234-5678</p>
+                </div>
+                <div class="footer-section">
+                    <h4>社群媒體</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Horizon Outdoor. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // 商品頁面專用功能
+        document.addEventListener('DOMContentLoaded', function() {
+            let cart = [];
+            let products = [];
+
+            // 初始化商品數據
+            function initProducts() {
+                const productCards = document.querySelectorAll('.product-card');
+                productCards.forEach(card => {
+                    const product = {
+                        id: card.dataset.category + '-' + Math.random().toString(36).substr(2, 9),
+                        name: card.querySelector('h3').textContent,
+                        price: parseInt(card.dataset.price),
+                        image: card.querySelector('img').src,
+                        category: card.dataset.category
+                    };
+                    products.push(product);
+                });
+            }
+
+            // 商品篩選功能
+            function initFilters() {
+                const filterButtons = document.querySelectorAll('.filter-btn');
+                const productCards = document.querySelectorAll('.product-card');
+
+                filterButtons.forEach(btn => {
+                    btn.addEventListener('click', function() {
+                        filterButtons.forEach(b => b.classList.remove('active'));
+                        this.classList.add('active');
+
+                        const category = this.getAttribute('data-category');
+
+                        productCards.forEach(card => {
+                            if (category === 'all' || card.dataset.category.includes(category)) {
+                                card.style.display = 'block';
+                                card.classList.add('fade-in-up');
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        });
+                    });
+                });
+            }
+
+            // 商品搜尋功能
+            function initSearch() {
+                const searchInput = document.getElementById('product-search');
+                const productCards = document.querySelectorAll('.product-card');
+
+                searchInput.addEventListener('input', function() {
+                    const searchTerm = this.value.toLowerCase();
+
+                    productCards.forEach(card => {
+                        const name = card.querySelector('h3').textContent.toLowerCase();
+                        const description = card.querySelector('.product-description').textContent.toLowerCase();
+
+                        if (name.includes(searchTerm) || description.includes(searchTerm)) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            }
+
+            // 商品排序功能
+            function initSorting() {
+                const sortSelect = document.getElementById('sort-select');
+                const productsGrid = document.getElementById('products-grid');
+
+                sortSelect.addEventListener('change', function() {
+                    const sortBy = this.value;
+                    const productCards = Array.from(document.querySelectorAll('.product-card'));
+
+                    productCards.sort((a, b) => {
+                        switch (sortBy) {
+                            case 'price-low':
+                                return parseInt(a.dataset.price) - parseInt(b.dataset.price);
+                            case 'price-high':
+                                return parseInt(b.dataset.price) - parseInt(a.dataset.price);
+                            case 'newest':
+                                return b.dataset.new ? 1 : -1;
+                            case 'popular':
+                                return b.dataset.popular ? 1 : -1;
+                            default:
+                                return 0;
+                        }
+                    });
+
+                    // 重新排列商品
+                    productCards.forEach(card => {
+                        productsGrid.appendChild(card);
+                    });
+                });
+            }
+
+            // 購物車功能
+            function initCart() {
+                const addToCartButtons = document.querySelectorAll('.btn-primary');
+                const cartSidebar = document.getElementById('cart-sidebar');
+                const cartOverlay = document.getElementById('cart-overlay');
+                const closeCartBtn = document.getElementById('close-cart');
+
+                addToCartButtons.forEach(btn => {
+                    btn.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const productCard = this.closest('.product-card');
+                        const productName = productCard.querySelector('h3').textContent;
+                        const productPrice = parseInt(productCard.dataset.price);
+                        const productImage = productCard.querySelector('img').src;
+
+                        addToCart({
+                            id: productCard.dataset.category + '-' + Math.random().toString(36).substr(2, 9),
+                            name: productName,
+                            price: productPrice,
+                            image: productImage
+                        });
+
+                        // 顯示購物車
+                        cartSidebar.classList.add('active');
+                        cartOverlay.classList.add('active');
+                    });
+                });
+
+                // 關閉購物車
+                closeCartBtn.addEventListener('click', function() {
+                    cartSidebar.classList.remove('active');
+                    cartOverlay.classList.remove('active');
+                });
+
+                cartOverlay.addEventListener('click', function() {
+                    cartSidebar.classList.remove('active');
+                    cartOverlay.classList.remove('active');
+                });
+            }
+
+            // 添加到購物車
+            function addToCart(product) {
+                const existingItem = cart.find(item => item.name === product.name);
+                
+                if (existingItem) {
+                    existingItem.quantity += 1;
+                } else {
+                    cart.push({...product, quantity: 1});
+                }
+                
+                updateCartDisplay();
+            }
+
+            // 更新購物車顯示
+            function updateCartDisplay() {
+                const cartItems = document.getElementById('cart-items');
+                const cartTotal = document.getElementById('cart-total');
+                
+                cartItems.innerHTML = '';
+                let total = 0;
+
+                cart.forEach(item => {
+                    total += item.price * item.quantity;
+                    
+                    const cartItem = document.createElement('div');
+                    cartItem.className = 'cart-item';
+                    cartItem.innerHTML = `
+                        <div class="cart-item-image">
+                            <img src="${item.image}" alt="${item.name}">
+                        </div>
+                        <div class="cart-item-details">
+                            <h4>${item.name}</h4>
+                            <div class="cart-item-price">NT$ ${item.price.toLocaleString()}</div>
+                            <div class="cart-item-quantity">
+                                <button class="quantity-btn" onclick="updateQuantity('${item.id}', -1)">-</button>
+                                <span>${item.quantity}</span>
+                                <button class="quantity-btn" onclick="updateQuantity('${item.id}', 1)">+</button>
+                            </div>
+                        </div>
+                        <button class="remove-item" onclick="removeFromCart('${item.id}')">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    `;
+                    cartItems.appendChild(cartItem);
+                });
+
+                cartTotal.textContent = `NT$ ${total.toLocaleString()}`;
+            }
+
+            // 更新商品數量
+            window.updateQuantity = function(itemId, change) {
+                const item = cart.find(item => item.id === itemId);
+                if (item) {
+                    item.quantity += change;
+                    if (item.quantity <= 0) {
+                        removeFromCart(itemId);
+                    } else {
+                        updateCartDisplay();
+                    }
+                }
+            };
+
+            // 從購物車移除商品
+            window.removeFromCart = function(itemId) {
+                cart = cart.filter(item => item.id !== itemId);
+                updateCartDisplay();
+            };
+
+            // 初始化所有功能
+            initProducts();
+            initFilters();
+            initSearch();
+            initSorting();
+            initCart();
+        });
+    </script>
+</body>
+</html>
