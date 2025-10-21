@@ -45,9 +45,35 @@ body {
     font-size: 1.5rem;
 }
 
-.logo-img {
-    height: 40px;
-    width: auto;
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1;
+}
+
+.logo-main {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2c5530;
+    letter-spacing: -0.5px;
+}
+
+.logo-sub {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #4a7c59;
+    margin-top: -2px;
+    letter-spacing: 1px;
+}
+
+.logo-link {
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.logo-link:hover {
+    transform: scale(1.05);
 }
 
 .nav-menu {
