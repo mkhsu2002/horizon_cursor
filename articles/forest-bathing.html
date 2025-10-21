@@ -229,5 +229,30 @@
     </footer>
 
     <script src="../script.js"></script>
+    <script>
+        // 修正文章頁面的導覽列連結
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    
+                    // 如果是錨點連結（包含 #），需要特殊處理
+                    if (href.includes('#')) {
+                        e.preventDefault();
+                        const [page, anchor] = href.split('#');
+                        
+                        if (page === '../index.html' || page === '../index.html#story') {
+                            // 跳轉到首頁的特定區塊
+                            window.location.href = '../index.html' + (anchor ? '#' + anchor : '');
+                        } else {
+                            window.location.href = href;
+                        }
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
