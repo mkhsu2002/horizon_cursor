@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon 社群牆 - 精選貼文展示</title>
+    <meta name="description" content="Horizon Outdoor 社群牆，展示來自 Facebook 和 Instagram 的精美照片與符合品牌理念的貼文">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 導覽列 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><img src="logo.png" alt="Horizon Outdoor Logo" class="logo-img"></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">首頁</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#story" class="nav-link">品牌故事</a>
+                </li>
+                <li class="nav-item">
+                    <a href="journal.html" class="nav-link">品牌誌</a>
+                </li>
+                <li class="nav-item">
+                    <a href="community.html" class="nav-link">社群牆</a>
+                </li>
+                <li class="nav-item">
+                    <a href="shop.html" class="nav-link">風格商品</a>
+                </li>
+                <li class="nav-item">
+                    <a href="commitment.html" class="nav-link">我們的承諾</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 頁面標題 -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Horizon 社群牆</h1>
+            <p>來自 Facebook 和 Instagram 的精美照片與品牌理念分享</p>
+        </div>
+    </section>
+
+    <!-- 社群平台篩選 -->
+    <section class="social-filters">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-platform="all">全部</button>
+                <button class="filter-btn" data-platform="facebook">Facebook</button>
+                <button class="filter-btn" data-platform="instagram">Instagram</button>
+                <button class="filter-btn" data-platform="featured">精選</button>
+            </div>
+            <div class="filter-options">
+                <div class="sort-options">
+                    <select id="sort-select">
+                        <option value="latest">最新發布</option>
+                        <option value="popular">最受歡迎</option>
+                        <option value="oldest">最早發布</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 社群貼文展示 -->
+    <section class="social-posts">
+        <div class="container">
+            <div class="posts-grid" id="posts-grid">
+                <!-- Facebook 貼文 -->
+                <article class="social-post facebook" data-platform="facebook" data-featured="true">
+                    <div class="post-header">
+                        <div class="platform-icon">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <div class="post-meta">
+                            <h3>Horizon Outdoor Living</h3>
+                            <span class="post-date">2 天前</span>
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i> 1.2k</button>
+                            <button class="action-btn"><i class="fas fa-share"></i></button>
+                        </div>
+                    </div>
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop" alt="森林健行">
+                    </div>
+                    <div class="post-content">
+                        <p>「在城市近郊的森林步道中，我們找到了與自然重新連結的方式。每一次的健行都是對身心的療癒，也是對環境的尊重。Go. Back to Nature. 🌲✨」</p>
+                        <div class="post-hashtags">
+                            <span class="hashtag">#HorizonOutdoor</span>
+                            <span class="hashtag">#GoBackToNature</span>
+                            <span class="hashtag">#城市健行</span>
+                            <span class="hashtag">#森林療癒</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Instagram 貼文 -->
+                <article class="social-post instagram" data-platform="instagram" data-featured="true">
+                    <div class="post-header">
+                        <div class="platform-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="post-meta">
+                            <h3>@horizonoutdoor.ca</h3>
+                            <span class="post-date">3 天前</span>
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i> 856</button>
+                            <button class="action-btn"><i class="fas fa-share"></i></button>
+                        </div>
+                    </div>
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop" alt="戶外裝備">
+                    </div>
+                    <div class="post-content">
+                        <p>「選擇環保材質的戶外裝備，是我們對地球的承諾。每一件產品都承載著永續的理念，讓每一次的戶外探索都成為對未來的投資。Do the right thing. 🌱」</p>
+                        <div class="post-hashtags">
+                            <span class="hashtag">#HorizonOutdoor</span>
+                            <span class="hashtag">#DoTheRightThing</span>
+                            <span class="hashtag">#環保裝備</span>
+                            <span class="hashtag">#永續生活</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Facebook 貼文 -->
+                <article class="social-post facebook" data-platform="facebook">
+                    <div class="post-header">
+                        <div class="platform-icon">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <div class="post-meta">
+                            <h3>Horizon Outdoor Living</h3>
+                            <span class="post-date">5 天前</span>
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i> 743</button>
+                            <button class="action-btn"><i class="fas fa-share"></i></button>
+                        </div>
+                    </div>
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&h=400&fit=crop" alt="城市公園">
+                    </div>
+                    <div class="post-content">
+                        <p>「週末的城市公園健行，不需要遠行就能享受自然的美好。帶著家人一起，在綠意中放鬆身心，這就是我們提倡的『城市戶外』生活。簡單、美好、永續。」</p>
+                        <div class="post-hashtags">
+                            <span class="hashtag">#城市戶外</span>
+                            <span class="hashtag">#家庭時光</span>
+                            <span class="hashtag">#公園健行</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Instagram 貼文 -->
+                <article class="social-post instagram" data-platform="instagram">
+                    <div class="post-header">
+                        <div class="platform-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="post-meta">
+                            <h3>@horizonoutdoor.ca</h3>
+                            <span class="post-date">1 週前</span>
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i> 1.1k</button>
+                            <button class="action-btn"><i class="fas fa-share"></i></button>
+                        </div>
+                    </div>
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&h=400&fit=crop" alt="環保行動">
+                    </div>
+                    <div class="post-content">
+                        <p>「微環保行動的力量：從攜帶環保杯開始，到選擇永續材質的服裝，每一個小選擇都是對環境的愛護。讓我們一起用行動證明，改變從自己開始。」</p>
+                        <div class="post-hashtags">
+                            <span class="hashtag">#微環保行動</span>
+                            <span class="hashtag">#永續選擇</span>
+                            <span class="hashtag">#環保生活</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Facebook 貼文 -->
+                <article class="social-post facebook" data-platform="facebook" data-featured="true">
+                    <div class="post-header">
+                        <div class="platform-icon">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <div class="post-meta">
+                            <h3>Horizon Outdoor Living</h3>
+                            <span class="post-date">1 週前</span>
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i> 892</button>
+                            <button class="action-btn"><i class="fas fa-share"></i></button>
+                        </div>
+                    </div>
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&h=400&fit=crop" alt="社群活動">
+                    </div>
+                    <div class="post-content">
+                        <p>「感謝所有參與 #HorizonRightThing 活動的朋友們！看到大家分享的環保行動和戶外體驗，讓我們更加堅信每個人都有改變世界的力量。繼續分享你的故事吧！」</p>
+                        <div class="post-hashtags">
+                            <span class="hashtag">#HorizonRightThing</span>
+                            <span class="hashtag">#社群活動</span>
+                            <span class="hashtag">#感謝分享</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Instagram 貼文 -->
+                <article class="social-post instagram" data-platform="instagram">
+                    <div class="post-header">
+                        <div class="platform-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="post-meta">
+                            <h3>@horizonoutdoor.ca</h3>
+                            <span class="post-date">2 週前</span>
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i> 634</button>
+                            <button class="action-btn"><i class="fas fa-share"></i></button>
+                        </div>
+                    </div>
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop" alt="產品展示">
+                    </div>
+                    <div class="post-content">
+                        <p>「新一季的環保材質系列上市！每一件產品都經過嚴格的環保標準檢驗，讓你在享受戶外活動的同時，也能為地球盡一份心力。選擇 Horizon，選擇永續。」</p>
+                        <div class="post-hashtags">
+                            <span class="hashtag">#新品上市</span>
+                            <span class="hashtag">#環保材質</span>
+                            <span class="hashtag">#永續時尚</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Facebook 貼文 -->
+                <article class="social-post facebook" data-platform="facebook">
+                    <div class="post-header">
+                        <div class="platform-icon">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <div class="post-meta">
+                            <h3>Horizon Outdoor Living</h3>
+                            <span class="post-date">2 週前</span>
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i> 567</button>
+                            <button class="action-btn"><i class="fas fa-share"></i></button>
+                        </div>
+                    </div>
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop" alt="品牌故事">
+                    </div>
+                    <div class="post-content">
+                        <p>「Horizon 的創立源於一個簡單的信念：每個人都應該有機會享受戶外的美好，同時為環境盡一份心力。我們相信，走向戶外不應該是一件困難的事。」</p>
+                        <div class="post-hashtags">
+                            <span class="hashtag">#品牌故事</span>
+                            <span class="hashtag">#創立理念</span>
+                            <span class="hashtag">#戶外精神</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Instagram 貼文 -->
+                <article class="social-post instagram" data-platform="instagram" data-featured="true">
+                    <div class="post-header">
+                        <div class="platform-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="post-meta">
+                            <h3>@horizonoutdoor.ca</h3>
+                            <span class="post-date">3 週前</span>
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i> 1.3k</button>
+                            <button class="action-btn"><i class="fas fa-share"></i></button>
+                        </div>
+                    </div>
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&h=400&fit=crop" alt="用戶分享">
+                    </div>
+                    <div class="post-content">
+                        <p>「感謝 @nature_lover_taiwan 分享的精彩照片！看到大家穿著 Horizon 裝備享受戶外時光，就是我們最大的滿足。繼續分享你的 #HorizonRightThing 故事吧！」</p>
+                        <div class="post-hashtags">
+                            <span class="hashtag">#用戶分享</span>
+                            <span class="hashtag">#HorizonRightThing</span>
+                            <span class="hashtag">#社群互動</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- 載入更多按鈕 -->
+            <div class="load-more-section">
+                <button class="btn btn-outline" id="load-more-posts">載入更多貼文</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Horizon Outdoor</h3>
+                    <p>Go. Back to Nature.<br>Do the right thing.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速連結</h4>
+                    <ul>
+                        <li><a href="index.html#story">品牌故事</a></li>
+                        <li><a href="journal.html">品牌誌</a></li>
+                        <li><a href="community.html">社群牆</a></li>
+                        <li><a href="shop.html">商品</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>聯絡我們</h4>
+                    <p>Email: horizon@icareu.tw</p>
+                    <p>電話: 03-5735430</p>
+                </div>
+                <div class="footer-section">
+                    <h4>社群媒體</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/horizonoutdoorliving" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/horizonoutdoor.ca/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@icareutw/" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Horizon Outdoor Taiwan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // 社群牆專用功能
+        document.addEventListener('DOMContentLoaded', function() {
+            // 平台篩選功能
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const posts = document.querySelectorAll('.social-post');
+
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // 移除所有按鈕的 active 狀態
+                    filterButtons.forEach(b => b.classList.remove('active'));
+                    // 添加當前按鈕的 active 狀態
+                    this.classList.add('active');
+
+                    const platform = this.getAttribute('data-platform');
+
+                    posts.forEach(post => {
+                        if (platform === 'all' || post.getAttribute('data-platform') === platform || 
+                            (platform === 'featured' && post.getAttribute('data-featured') === 'true')) {
+                            post.style.display = 'block';
+                            post.classList.add('fade-in-up');
+                        } else {
+                            post.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // 排序功能
+            const sortSelect = document.getElementById('sort-select');
+            const postsGrid = document.getElementById('posts-grid');
+
+            sortSelect.addEventListener('change', function() {
+                const sortBy = this.value;
+                const postsArray = Array.from(posts);
+
+                postsArray.sort((a, b) => {
+                    const dateA = new Date(a.querySelector('.post-date').textContent);
+                    const dateB = new Date(b.querySelector('.post-date').textContent);
+                    
+                    switch (sortBy) {
+                        case 'latest':
+                            return dateB - dateA;
+                        case 'oldest':
+                            return dateA - dateB;
+                        case 'popular':
+                            const likesA = parseInt(a.querySelector('.action-btn').textContent.replace(/[^\d]/g, ''));
+                            const likesB = parseInt(b.querySelector('.action-btn').textContent.replace(/[^\d]/g, ''));
+                            return likesB - likesA;
+                        default:
+                            return 0;
+                    }
+                });
+
+                // 重新排列貼文
+                postsArray.forEach(post => {
+                    postsGrid.appendChild(post);
+                });
+            });
+
+            // 載入更多功能
+            const loadMoreBtn = document.getElementById('load-more-posts');
+            let currentPosts = 8; // 目前顯示的貼文數量
+            const postsPerLoad = 4;
+
+            loadMoreBtn.addEventListener('click', function() {
+                // 這裡可以添加載入更多貼文的邏輯
+                console.log('載入更多貼文');
+                // 模擬載入更多
+                currentPosts += postsPerLoad;
+                
+                // 如果沒有更多貼文，隱藏按鈕
+                if (currentPosts >= 20) { // 假設總共有20篇貼文
+                    this.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
