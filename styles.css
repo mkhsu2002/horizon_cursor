@@ -45,34 +45,13 @@ body {
     font-size: 1.5rem;
 }
 
-.logo-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    line-height: 1;
-}
-
-.logo-main {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #2c5530;
-    letter-spacing: -0.5px;
-}
-
-.logo-sub {
-    font-size: 0.9rem;
-    font-weight: 400;
-    color: #4a7c59;
-    margin-top: -2px;
-    letter-spacing: 1px;
-}
-
-.logo-link {
-    text-decoration: none;
+.logo-img {
+    height: 50px;
+    width: auto;
     transition: transform 0.3s ease;
 }
 
-.logo-link:hover {
+.logo-img:hover {
     transform: scale(1.05);
 }
 
@@ -137,17 +116,16 @@ body {
 }
 
 .hero-content {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 2;
     text-align: center;
     color: white;
     max-width: 800px;
     padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    width: 100%;
 }
 
 .hero-title {
