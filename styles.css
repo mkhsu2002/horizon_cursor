@@ -1703,3 +1703,193 @@ html {
 .hover-lift:hover {
     transform: translateY(-5px);
 }
+
+/* 文章頁面樣式 */
+.article-header {
+    padding: 120px 0 60px;
+    background: linear-gradient(135deg, #2c5530 0%, #4a7c59 100%);
+    color: white;
+    text-align: center;
+}
+
+.article-meta {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.article-category {
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.article-category.go {
+    background: #2c5530;
+    color: white;
+}
+
+.article-category.do {
+    background: #4a7c59;
+    color: white;
+}
+
+.article-date {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
+
+.article-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.article-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.article-content {
+    padding: 60px 0;
+    background: white;
+}
+
+.article-body {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.article-body h2 {
+    font-size: 2rem;
+    color: #2c5530;
+    margin: 2rem 0 1rem;
+    font-weight: 700;
+}
+
+.article-body h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 1.5rem 0 1rem;
+    font-weight: 600;
+}
+
+.article-body p {
+    margin-bottom: 1.5rem;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.article-body ul, .article-body ol {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+}
+
+.article-body li {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.article-body strong {
+    color: #2c5530;
+    font-weight: 600;
+}
+
+.article-image {
+    margin: 2rem 0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.article-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.article-tags {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.article-tags .tag {
+    background: #f0f0f0;
+    color: #666;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+.related-articles {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+.related-articles h3 {
+    font-size: 2rem;
+    color: #2c5530;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.related-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.related-card:hover {
+    transform: translateY(-5px);
+}
+
+.related-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.related-card h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 1rem 1.5rem 0.5rem;
+    font-weight: 600;
+}
+
+.related-card p {
+    color: #666;
+    margin: 0 1.5rem 1rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.related-card .read-more {
+    display: block;
+    margin: 0 1.5rem 1.5rem;
+    color: #2c5530;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.related-card .read-more:hover {
+    color: #4a7c59;
+    text-decoration: underline;
+}
