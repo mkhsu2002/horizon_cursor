@@ -9,7 +9,7 @@ Horizon Outdoor 品牌文化與社群互動的核心平台，傳遞「Go. Back t
 ### 主要頁面
 - **首頁 (index.html)** - 品牌主視覺、理念闡述、商品推薦
 - **品牌誌 (journal.html)** - 內容行銷平台，分為「Go」和「Do」兩大分類
-- **社群牆 (community.html)** - #HorizonRightThing UGC 活動展示
+- **社群牆 (community.html)** - #DoTheRightThing UGC 活動展示
 - **商品頁 (shop.html)** - 電子商務功能，環保商品展示
 - **承諾頁 (commitment.html)** - 品牌承諾、影響力報告
 
@@ -67,7 +67,7 @@ Horizon_Web/
 - 品牌故事與使命說明
 
 ### 2. 社群互動功能
-- #HorizonRightThing 標籤聚合
+- #DoTheRightThing 標籤聚合
 - 社群貼文展示與互動
 - 參與方式說明與引導
 
